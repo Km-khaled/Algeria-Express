@@ -1,0 +1,124 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    
+   }
+
+body{
+    background-color: #010103;
+    display: block;
+    color: white;
+    text-align: left;
+    }
+
+.first{
+    line-height: 28px;
+    width: 80%;
+    padding-top: 20px;
+    margin-left: 60px ;
+}
+
+
+
+.about{
+    text-align: center;
+    color: #1B385B;
+    
+}
+
+.title p{
+    font-weight: bolder;
+    font-size: 26px;
+    margin-top: -14px;
+}
+
+.text{
+    position: absolute;
+    font-size: 19px;
+    height: 100px;
+    width: 450px;
+}
+.text1{
+    
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.Rail {
+     padding-top: 10px;
+     padding-left: 10px ;
+
+}
+
+.text2{
+    margin-top: 190px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+.p2{
+    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-left: 10px ;
+
+}
+
+img{
+    position: absolute;
+    height: 400px;
+    width: 550px;
+    
+}
+
+.img{
+    margin-left: 600px;
+    padding-top: 20px;
+}
+
+.text3{
+    margin-top: 450px;
+    margin-left: 600px;
+
+}
+
+.img2{
+    margin-left: 20px;
+    padding-top: 450px;
+}
+
+.text4{
+    margin-top:950px;
+    margin-left: 20px;
+}
+
+.img3{
+    margin-left: 600px;
+    padding-top: 950px;
+}
+
+.text5{
+    margin-left: 600px;
+    padding-top: 1450px;
+}
+
+.img4{
+    margin-left: 20px;
+    padding-top: 1450px;
+}
+
+.img5{
+    margin-left: 600px;
+    padding-top: 1950px;
+}
+
+.text6{
+    margin-top:1950px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+

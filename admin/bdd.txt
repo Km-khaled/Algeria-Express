@@ -1,0 +1,74 @@
+
+CREATE TABLE gl.trip(  
+    id_trip int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_train int NOT NULL,
+    Departure VARCHAR(20),
+    Destination VARCHAR(20),
+    tme TIME,
+    dte DATE,
+    amount int,
+    FOREIGN KEY (id) REFERENCES gl.train(id)
+)
+
+
+CREATE TABLE gl.Tecket(
+id_ticket INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_user INT NOT NULL,
+id_trip INT NOT NULL,
+fullname  VARCHAR(30),
+Departure VARCHAR(30),
+Destination VARCHAR(30),
+tme TIME,
+dte DATE,
+amount INT,
+FOREIGN KEY(id_trip) REFERENCES gl.trip(id_trip), 
+FOREIGN KEY(id_user) REFERENCES gl.users(id)
+)
+
+CREATE TABLE gl.admin(
+id_admin INT NOT NULL PRIMARY KEY,
+user_name VARCHAR(30),
+pass VARCHAR(30),
+email  VARCHAR(30) UNIQUE,
+credit_card VARCHAR(50) UNIQUE,
+solde INT
+)
+
+
+
+
+
+INSERT INTO admin(id_admin,user_name,pass,email,credit_card,solde) VALUES(1,'Admin@admin','Admin@admin','admin@gmail.com','6280-7030-7794-4805',0)
+
+
+
+
+
+INSERT INTO  gl.trip(id_train,Departure,Destination,tme,dte,amount) 
+VALUES
+(2,'ALGER','ORAN','16:45','24/12/2022',100)
+(3,'ORAN','ARZEW','7:15','24/12/2022',150)
+(4,'ARZEW','ORAN','11:00','24/12/2022',150)
+(5,'ORAN','TELEMCEN','12:20','24/12/2022',170)
+(6,'ORAN','SBA','10:20','24/12/2022',200)
+(7,'ORAN','CHLEF','13:15','24/12/2022',100)
+(8,'ORAN','SAIDA','13:30','24/12/2022',100) 
+
+
+
+
+
+
+CREATE Table IF NOT EXISTS history(
+id_his INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_train int NOT NULL,
+id_ticket int NOT NULL,
+user_id INT NOT NULL,
+id_trip INT not NULL,
+FOREIGN KEY(id_train) REFERENCES train(id),
+FOREIGN KEY(id_ticket) REFERENCES ticket(id_ticket),
+FOREIGN KEY(user_id) REFERENCES users(id),
+
+FOREIGN KEY(id_trip) REFERENCES trip(id_trip)
+
+)
