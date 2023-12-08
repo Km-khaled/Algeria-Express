@@ -1,4 +1,5 @@
-# Algeria Express
+<img width="292" alt="Screenshot 2023-12-08 at 6 22 50 PM" src="https://github.com/Km-khaled/Algeria-Express/assets/109686238/3bb3e845-940e-4fb1-a1b1-803a06582baf">
+
 Algeria Express is a user-friendly website that enables customers to explore various train routes and purchase tickets online. The platform allows users to create accounts, providing them with access to the full functionality of the site.
 ## Features
 ### Comprehensive Schedule
